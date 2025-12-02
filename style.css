@@ -1,0 +1,96 @@
+/* Reset dan Body Umum */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(135deg, #f5f5dc 0%, #d2b48c 50%, #8b4513 100%); 
+    color: #333; 
+    overflow-x: hidden; 
+}
+
+/* Header */
+header { 
+    background: linear-gradient(90deg, #8b4513, #a0522d, #daa520); 
+    color: white; 
+    padding: 30px 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+    animation: slideIn 1s ease-out; 
+}
+header h1 { 
+    font-size: 2.5em; 
+    font-weight: 700; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+header p { 
+    font-size: 1.2em; 
+    margin-top: 10px; 
+    opacity: 0.9; 
+}
+
+/* Navigasi */
+nav { 
+    background: rgba(244, 162, 97, 0.9); 
+    padding: 15px; 
+    text-align: center; 
+    backdrop-filter: blur(10px); 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+}
+nav a { 
+    color: white; 
+    margin: 0 25px; 
+    text-decoration: none; 
+    font-weight: 600; 
+    font-size: 1.1em; 
+    transition: all 0.4s ease; 
+    position: relative; 
+}
+nav a:hover { 
+    color: #daa520; 
+    transform: scale(1.1) rotate(2deg); 
+}
+nav a::after { 
+    content: ''; 
+    position: absolute; 
+    width: 0; 
+    height: 2px; 
+    bottom: -5px; 
+    left: 50%; 
+    background: #daa520; 
+    transition: all 0.4s ease; 
+}
+nav a:hover::after { 
+    width: 100%; 
+    left: 0; 
+}
+
+/* Footer */
+footer { 
+    background: linear-gradient(90deg, #8b4513, #a0522d); 
+    color: white; 
+    text-align: center; 
+    padding: 30px 20px; 
+}
+footer p { 
+    font-size: 1em; 
+}
+footer i { 
+    color: #daa520; 
+}
+
+/* Animasi Umum */
+@keyframes slideIn { 
+    from { transform: translateY(-50px); opacity: 0; } 
+    to { transform: translateY(0); opacity: 1; } 
+}
+@keyframes fadeInUp { 
+    from { transform: translateY(50px); opacity: 0; } 
+    to { transform: translateY(0); opacity: 1; } 
+}
+
+/* Responsivitas Umum */
+@media (max-width: 768px) { 
+    header h1 { font-size: 2em; } 
+    nav a { margin: 0 15px; } 
+}

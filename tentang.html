@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM Syal - Tentang Kami</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #f5f5dc 0%, #d2b48c 50%, #8b4513 100%); color: #333; overflow-x: hidden; }
+        header { background: linear-gradient(90deg, #8b4513, #a0522d, #daa520); color: white; padding: 30px 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); animation: slideIn 1s ease-out; }
+        header h1 { font-size: 2.5em; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        header p { font-size: 1.2em; margin-top: 10px; opacity: 0.9; }
+        nav { background: rgba(244, 162, 97, 0.9); padding: 15px; text-align: center; backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; margin: 0 25px; text-decoration: none; font-weight: 600; font-size: 1.1em; transition: all 0.4s ease; position: relative; }
+        nav a:hover { color: #daa520; transform: scale(1.1) rotate(2deg); }
+        nav a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 50%; background: #daa520; transition: all 0.4s ease; }
+        nav a:hover::after { width: 100%; left: 0; }
+        .tentang { padding: 50px 20px; background: rgba(255,255,255,0.9); text-align: center; max-width: 1000px; margin: 0 auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); animation: fadeInUp 1.5s ease-out; }
+        .tentang h2 { font-size: 2.5em; margin-bottom: 20px; color: #8b4513; }
+        .tentang p { font-size: 1.2em; line-height: 1.6; margin-bottom: 20px; color: #555; }
+        .tentang .highlight { font-weight: 700; color: #e76f51; }
+        .tentang img { width: 100%; max-width: 400px; border-radius: 15px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transition: transform 0.4s ease; }
+        .tentang img:hover { transform: scale(1.05); }
+        footer { background: linear-gradient(90deg, #8b4513, #a0522d); color: white; text-align: center; padding: 30px 20px; }
+        footer p { font-size: 1em; }
+        footer i { color: #daa520; }
+        @keyframes slideIn { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes fadeInUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @media (max-width: 768px) { header h1 { font-size: 2em; } nav a { margin: 0 15px; } .tentang { padding: 30px 15px; } .tentang img { max-width: 100%; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-scarf"></i> UMKM Syal</h1>
+        <p>Koleksi Syal Tradisional Berkualitas Tinggi</p>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <section class="tentang">
+        <h2>Tentang UMKM Syal</h2>
+        <img src="https://via.placeholder.com/400x300/daa520/ffffff?text=Workshop+Syal" alt="Workshop Syal">
+        <p>Kami adalah UMKM lokal yang berdedikasi untuk menghasilkan syal berkualitas tinggi dari bahan tradisional. Didirikan sejak 2010, kami fokus pada <span class="highlight">kerajinan tangan</span> dan inovasi desain untuk memenuhi kebutuhan pelanggan modern.</p>
+        <p>Dengan tim ahli yang berpengalaman, kami memastikan setiap syal dibuat dengan cinta dan perhatian detail. Pilih syal kami untuk gaya yang elegan dan nyaman!</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 UMKM Syal. Semua hak dilindungi. <i class="fas fa-heart"></i></p>
+    </footer>
+</body>
+</html>
